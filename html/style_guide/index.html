@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <a href="#none" class="main_logo">
+                        <img src="../../image/logo/main_logo.png" alt="SGIS">
+                    </a>
+                </div>
+                <div>
+                    <button class="bell_icon"></button>
+                    <button class="set_icon"></button>
+                </div>
+            </div>
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">타이틀</div>
+                <div>
+                    <button class="q_icon"></button>
+                    <button class="home_icon"></button>
+                    <button class="x_icon"></button>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide">
+                <div class="title_wrap">
+                    <h2 class="h2">
+                        <b>input</b>
+                    </h2>
+                </div>
+                <div class="inp_wrap mt_12">
+                    <label class="label">인풋</label>
+                    <input type="text" placeholder="placeholder">
+                </div>
+                <div class="inp_wrap mt_12">
+                    <label class="label">readonly</label>
+                    <input type="text" placeholder="placeholder" readonly value="홍길동">
+                </div>
+                <div class="inp_wrap mt_12">
+                    <label class="label">텍스트 삭제 포함</label>
+                    <div class="inp">
+                        <input type="text" placeholder="placeholder">
+                        <button class="remove_btn"></button>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_12">
+                    <label class="label">eye 아이콘 포함</label>
+                    <div class="inp">
+                        <input type="password" placeholder="placeholder">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        state_txt
+                    </div>
+                </div>
+                <div class="inp_wrap state_red mt_12">
+                    <label class="label">state_red</label>
+                    <div class="inp">
+                        <input type="password" placeholder="placeholder">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        state_txt
+                    </div>
+                </div>
+                <div class="inp_wrap state_green mt_12">
+                    <label class="label">state_green</label>
+                    <div class="inp">
+                        <input type="password" placeholder="placeholder">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        state_txt
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guide">
+                <div class="title_wrap mt_24">
+                    <h2 class="h2">
+                        <b>buttons</b>
+                    </h2>
+                </div>
+                <button class="btn blue">btn blue</button>
+                <button class="btn blue disabled">btn blue disabled</button>
+                <button class="btn blue_border">btn blue_border</button>
+                <button class="btn red">btn red</button>
+                <button class="btn gray">btn gray</button>
+                <button class="btn gray02">btn gray02</button>
+                <button class="btn orange">btn orange</button>
+            </div>
+
+            <div class="guide" style="background-color:#ccc; padding:0;">
+                <div class="title_wrap mt_24">
+                    <h2 class="h2">
+                        <b>alarm_list</b>
+                    </h2>
+                </div>
+                <ul class="alarm_list mt_20">
+                    <li>
+                        <i class="bang_icon"></i>
+                        <div class="desc">
+                            <div class="tit">
+                                <b>보험금 청구</b> 서류가 보험사에 전달되었습니다.
+                            </div>
+                            <div class="time">2시간 전</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="guide">
+                <div class="title_wrap mt_24">
+                    <h2 class="h2">
+                        <b>checkbox, radio</b>
+                    </h2>
+                </div>
+                <div>
+                    <div class="radio">
+                        <input id="rad01" type="radio">
+                        <label for="rad01">라디오</label>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input id="chk01" type="checkbox">
+                    <label for="chk01">체크박스</label>
+                </div>
+                <ul class="checkbox_list">
+                    <li>
+                        <div class="checkbox">
+                            <input id="chk02" type="checkbox">
+                            <label for="chk02"></label>
+                        </div>
+                        <a href="" class="a_link">
+                            개인(신용)정보 수집 · 이용에 관한 동의
+                            <i class="r_arrow_icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <input id="chk03" type="checkbox">
+                            <label for="chk03"></label>
+                        </div>
+                        <a href="" class="a_link">
+                            개인(신용)정보 수집 · 이용에 관한 동의
+                            <i class="r_arrow_icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="title_wrap mt_24">
+                    <h2 class="h2">
+                        <b>popup</b>
+                    </h2>
+                    <div class="dis_flex">
+                        <button class="btn blue" onclick="popOpen('#alert01')">alert</button>
+                        <button class="btn blue" onclick="btmSheetOpen('#btmSheet01')">bottom sheet</button>
+                    </div>
+                    <div class="dis_flex">
+                        <button class="btn blue" onclick="toastOpen('본인인증에 성공하였습니다.')">toast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue">foot btn</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+    </div>
+
+    <!-- alert_pop -->
+    <div class="alert_pop" id="alert01">
+        <div class="pop_wrap">
+            <button class="x_icon popClose" onclick="popClose('#alert01')"></button>
+            <div class="pop_tit">인증 완료</div>
+            <div class="pop_body">
+                <div class="msg">
+                    회원님의 아이디: <a href="" class="underline">vhf5357</a>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn black" onclick="popClose('#alert01')">로그인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_sheet_pop active active_ani" id="btmSheet01">
+        <div class="pop_wrap"> <!-- .pd_type2 -->
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">증빙서류 첨부</div>
+            <div class="pop_body">
+                <div class="inner_gray_box square">
+                    <div class="fs_13">
+                        · 서류를 접힌 부분 없이 깔끔하게 펴서 촬영해 주세요.<br/>
+                        · 촬영 시 카메라 초점을 흐려지지 않게 맞춰 주세요.<br/>
+                        · 그림자가 지지 않도록 배치하여 촬영해 주세요.
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn gray" onclick="btmSheetClose('#btmSheet01')">초기화</button>
+                <button class="btn blue" onclick="btmSheetClose('#btmSheet01')">확인</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/common.js"></script>
+</body>
+</html>

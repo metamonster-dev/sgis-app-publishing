@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">자주 묻는 질문</div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide">
+
+                <div class="qna_list">
+                    <button class="q_item">
+                        <span class="tit">
+                            <span class="fs_16">Q.</span>
+                            실손의료보험에서 국민건강보험법에 따른<br/> 급여와 비급여는 무엇을 의미하나요?
+                        </span>
+                        <i class="b_arrow_icon"></i>
+                    </button>
+                    <div class="a_item">
+                        <span class="desc">
+                            <span class="fs_16">A.</span>
+                            건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="qna_list">
+                    <button class="q_item">
+                        <span class="tit">
+                            <span class="fs_16">Q.</span>
+                            산제 처리 시 요양 급여 신청서는 어디서 발급을 받을 수 있나요?
+                        </span>
+                        <i class="b_arrow_icon"></i>
+                    </button>
+                    <div class="a_item">
+                        <span class="desc">
+                            <span class="fs_16">A.</span>
+                            건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="qna_list">
+                    <button class="q_item">
+                        <span class="tit">
+                            <span class="fs_16">Q.</span>
+                            의료비는 비례 보상이 된다는데, 해당 방식이 어떤식으로 진행되는지 궁금해요.
+                        </span>
+                        <i class="b_arrow_icon"></i>
+                    </button>
+                    <div class="a_item">
+                        <span class="desc">
+                            <span class="fs_16">A.</span>
+                            건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="qna_list">
+                    <button class="q_item">
+                        <span class="tit">
+                            <span class="fs_16">Q.</span>
+                            화상을 입거나 수술한 후에 구입한 흉터 방지제(패치, 시카 겔, 메디폼, 시카 케어)도 보상하나요?
+                        </span>
+                        <i class="b_arrow_icon"></i>
+                    </button>
+                    <div class="a_item">
+                        <span class="desc">
+                            <span class="fs_16">A.</span>
+                            건강과 지속 가능성을 추구하는 이들을 위해, 맛과 영양이 가득한 채식 요리 레시피를 소개합니다. 이 글에서는 간단하지만 맛있는 채식 요리 10가지를 선보입니다. 첫 번째 레시피는 아보카도 토스트, 아침 식사로 완벽하며 영양소가 풍부합니다.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+    </div>
+    <script src="../../js/common.js"></script>
+    <script>
+        document.querySelectorAll('.q_item').forEach((el) => {
+            el.addEventListener('click', (e) => {
+                let _target = e.target.closest('.q_item')
+                let aItem = _target.closest('.qna_list').querySelector('.a_item')
+                aItem.classList.toggle('active')
+
+                _target.classList.toggle('active')
+            })
+        })
+    </script>
+</body>
+</html>

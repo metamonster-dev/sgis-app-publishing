@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">비밀번호 변경</div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide">
+                <div class="title_wrap mt_20">
+                    <h2 class="h2">
+                        <b>새로운 비밀번호를 입력해 주세요</b>
+                    </h2>
+                </div>
+
+                <div class="inp_wrap mt_24">
+                    <label class="label">비밀번호</label>
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_8">
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                </div>
+
+                <div class="inp_wrap state_red mt_32">
+                    <label class="label">비밀번호</label>
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        영문+숫자+특수문자 조합 8~16자리 입력
+                    </div>
+                </div>
+                <div class="inp_wrap state_red mt_8">
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        비밀번호가 일치하지 않습니다.
+                    </div>
+                </div>
+
+                <div class="inp_wrap mt_32">
+                    <label class="label">비밀번호</label>
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                </div>
+                <div class="inp_wrap state_green mt_8">
+                    <div class="inp">
+                        <input type="password" placeholder="새로운 비밀번호">
+                        <i class="eye_icon"></i>
+                    </div>
+                    <div class="state_txt">
+                        비밀번호가 일치합니다.
+                    </div>
+                </div>
+                
+
+                <div class="mt_20">
+                    <button class="btn blue disabled">변경</button>
+                </div>
+                <div class="mt_20">
+                    <button class="btn blue" onclick="popOpen('#alert01')">변경</button>
+                </div>
+                <div class="mt_20">
+                    <button class="btn blue" onclick="toastOpen('본인인증에 성공하였습니다.')">변경 (토스트 팝업)</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- // container -->
+
+    </div>
+
+    <div class="alert_pop" id="alert01">
+        <div class="pop_wrap">
+            <button class="x_icon popClose" onclick="popClose('#alert01')"></button>
+            <div class="pop_tit">비밀번호 변경 완료</div>
+            <div class="pop_body">
+                <div class="msg">
+                    로그인을 다시 진행해 주세요
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn black" onclick="popClose('#alert01')">로그인</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/common.js"></script>
+</body>
+</html>
