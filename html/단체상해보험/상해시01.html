@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">단체상해보험</div>
+                <div>
+                    <button class="q_icon"></button>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide gray_bortop pb_28">
+                <div class="fs_16 fw_600 mt_28">1. 인적사항 및 보상안내 받으실 분</div>
+                <div class="inp_wrap mt_20">
+                    <label class="label">피보험자 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름을 입력해 주세요" value="홍길동" readonly>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">피보험자 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="1111111" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">직원 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름을 입력해 주세요" value="홍길동" readonly>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">직원 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="1111111" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">직원 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="보상안내 받을 분 입력">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">보상안내 받을 분 휴대폰 번호 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="숫자만 입력해 주세요">
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide gray_bortop pb_28">
+                <div class="fs_16 fw_600 mt_28">2. 청구사항(사고사항)</div>
+                <div class="inp_wrap mt_20">
+                    <label class="label">사고 유형 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap12">
+                        <div class="flex1">
+                            <input type="radio" name="rad00" id="rad01" class="hide" checked>
+                            <label for="rad01" class="btn gray02">상해</label>
+                        </div>
+                        <div class="flex1">
+                            <input type="radio" name="rad00" id="rad02" class="hide">
+                            <label for="rad02" class="btn gray02">질병</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">사고일시(발병일/진료일) <span class="col_red">*</span></label>
+                    <div class="dis_flex gap12">
+                        <div class="flex1">
+                            <input type="date" name="" id="date" placeholder="년/월/일">
+                        </div>
+                        <div class="flex1">
+                            <select>
+                                <option disabled selected>시/분</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">진단명(병명) <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="진단명 입력">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">사고장소 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="사고장소 입력">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">사고경위 <span class="col_red">*</span></label>
+                    <div class="textarea_with_num">
+                        <textarea rows="4" placeholder="사고경위를 작성해 주세요."></textarea>
+                        <div class="num">0/200</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide gray_bortop">
+                <div class="fs_16 fw_600 mt_20">3. 보험금 수령 계좌</div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">예금주 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름을 입력해 주세요" value="홍길동" readonly>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">예금주 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="1111111" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">은행 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <button class="select_ui_btn" onclick="btmSheetOpen('#btmSheet01')">은행 선택</button>
+                    </div>
+                    <div class="inp">
+                        <input type="text" placeholder="계좌번호 입력">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue disabled">다음</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop bank_sel" id="btmSheet01">
+        <div class="pop_wrap">
+            <div class="grab_btn_wrap">
+                <button class="grab_btn"></button>
+            </div>
+            <div class="pop_tit">
+                <div class="tit">은행 선택</div>
+                <div class="bank_tab_btns">
+                    <button class="bank_tab_btn active" onclick="bankTabBtnClick(event, 0)">은행</button>
+                    <button class="bank_tab_btn" onclick="bankTabBtnClick(event, 1)">증권</button>
+                </div>
+            </div>
+            <div class="pop_body">
+                <div class="bank_list">
+                    <button class="item">
+                        <img src="../../image/bank_icon/국민.png" alt="">
+                        국민은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/신한.png" alt="">
+                        신한은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/우리.png" alt="">
+                        우리은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/하나.png" alt="">
+                        하나은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/제일.png" alt="">
+                        제일은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/씨티.png" alt="">
+                        한국씨티은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/기업.png" alt="">
+                        기업은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/산업.png" alt="">
+                        산업은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/저축.png" alt="">
+                        저축은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/새마을금고.png" alt="">
+                        새마을금고
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/케이.png" alt="">
+                        케이뱅크
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/카카오.png" alt="">
+                        카카오뱅크
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/토스.png" alt="">
+                        토스뱅크
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/농협.png" alt="">
+                        NH농협은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/수협.png" alt="">
+                        수협은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/대구.png" alt="">
+                        대구은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/부산.png" alt="">
+                        부산은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/광주.png" alt="">
+                        광주은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/경남은행.png" alt="">
+                        경남은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/산림조합중앙회.png" alt="">
+                        산림조합중앙회
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/신협중앙회.png" alt="">
+                        신협중앙회
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/도이치은행.png" alt="">
+                        도이치은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/우체국.png" alt="">
+                        우체국
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/전북은행.png" alt="">
+                        전북은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/중국건설은행.png" alt="">
+                        중국건설은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/중국은행.png" alt="">
+                        중국은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/HSBC은행.png" alt="">
+                        HSBC은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/제주은행.png" alt="">
+                        제주은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/중국공상은행.png" alt="">
+                        중국공상은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/BNP파리바은행.png" alt="">
+                        BNP파리바은행
+                    </button>        
+                    <button class="item">
+                        <img src="../../image/bank_icon/JP모간체이스은행.png" alt="">
+                        JP모간체이스은행
+                    </button>             
+                </div>
+                <div class="bank_list type02" style=display:none;>
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/메리츠.png" alt="">
+                        메리츠증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/삼성.png" alt="">
+                        상성증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/한투.png" alt="">
+                        한국투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/미래에셋.png" alt="">
+                        미래에셋
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/키움.png" alt="">
+                        키움증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/NH.png" alt="">
+                        NH투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/교보.png" alt="">
+                        교보증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/대신.png" alt="">
+                        대신증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/하나.png" alt="">
+                        하나증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/신한.png" alt="">
+                        신한투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/KB.png" alt="">
+                        KB증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/BNK.png" alt="">
+                        BNK투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/유안타.png" alt="">
+                        유안타증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/다올.png" alt="">
+                        다올투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/DGB.png" alt="">
+                        하이투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/현대차.png" alt="">
+                        현대차증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/이베스트.png" alt="">
+                        이베스트투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/SK.png" alt="">
+                        SK증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/한화.png" alt="">
+                        한화투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/DB.png" alt="">
+                        DB금융투자
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/유진투자.png" alt="">
+                        유진투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/카카오페이.png" alt="">
+                        카카오페이증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/토스.png" alt="">
+                        토스증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/부국.png" alt="">
+                        부국증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/IBK투자증권.png" alt="">
+                        IBK투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/케이프투자증권.png" alt="">
+                        케이프투자증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/한국포스증권.png" alt="">
+                        한국포스증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/상상인증권.png" alt="">
+                        상상인증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/신영증권.png" alt="">
+                        신영증권
+                    </button>                
+                    <button class="item">
+                        <img src="../../image/bank_icon_02/뱅크오브아메리카.png" alt="">
+                        뱅크오브아메리카
+                    </button>                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/common.js"></script>
+    <script>
+
+        function bankTabBtnClick(e, idx){
+            document.querySelectorAll('.bank_tab_btns .bank_tab_btn').forEach((btn) => {btn.classList.remove('active')})
+            let _target = e.target.closest('.bank_tab_btn')
+            _target.classList.add('active')
+
+            document.querySelectorAll('.bank_list').forEach((list) => {list.style.display = 'none'})
+            document.querySelectorAll('.bank_list')[idx].style.display = ''
+        }
+
+        // bottom_sheet_pop grab_btn
+        window.addEventListener('touchmove', function(e){
+            let _target = e.target.closest('.grab_btn')
+            if(_target){
+                let modalWrap = _target.closest('.pop_wrap')
+                let calculate = e.changedTouches[0].clientY - window.innerHeight + modalWrap.offsetHeight - 20;
+                if(calculate > 0){
+                    modalWrap.style.bottom = '-'+calculate+'px'
+                    modalWrap.style.transitionDuration = '-'+calculate+'px'
+                    
+                    _target.addEventListener('touchend', function(){
+                        console.log(calculate)
+                        if(calculate < 100){
+                            modalWrap.style.bottom = '0px',
+                            modalWrap.style.transitionDuration = ''
+                        }
+                        if(calculate > 101){
+                            modalWrap.style.bottom = '-'+calculate+'px',
+                            modalWrap.closest('.bottom_sheet_pop').classList.remove('active_ani');
+                            setTimeout(()=>{
+                                modalWrap.style.bottom = 0,
+                                modalWrap.closest('.bottom_sheet_pop').classList.remove('active');
+                            }, 500)
+                        }
+                    });
+                }
+            }
+        })
+    </script>
+</body>
+</html>

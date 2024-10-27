@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">상해후유장해</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container gray02">
+
+            <div class="guide bg_white">
+                <div class="tab_btns_wrap type01">
+                    <div class="tab_btns">
+                        <button class="tab_btn active">상해후유증</button>
+                        <button class="tab_btn">상해사망</button>
+                        <button class="tab_btn">질병사망</button>
+                        <button class="tab_btn">뇌졸중</button>
+                        <button class="tab_btn">암</button>
+                        <button class="tab_btn">급성심근경색</button>
+                        <button class="tab_btn">실손의료비</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide mt_12">
+                <img src="../../image/dummy/구비서류01.png" class="w_full" id="docuImg">
+            </div>
+        </div>
+        <!-- // container -->
+
+    </div>
+
+    <script src="../../js/common.js"></script>
+    <script>
+        document.querySelectorAll('.tab_btns .tab_btn').forEach((btn, idx)=>{
+            btn.addEventListener('click', ()=>{
+                let title = document.querySelector('.header .tit')
+                let img = document.querySelector('#docuImg')
+                if(idx == 0){
+                    title.innerHTML = '상해후유장애'
+                    img.src = '../../image/dummy/구비서류01.png'
+                }   
+                if(idx == 1){
+                    title.innerHTML = '상해사망 보험금'
+                    img.src = '../../image/dummy/구비서류02.png'
+                }   
+                if(idx == 2){
+                    title.innerHTML = '질병 사망 보험금'
+                    img.src = '../../image/dummy/구비서류03.png'
+                }   
+                if(idx == 3){
+                    title.innerHTML = '뇌졸중 진단금'
+                    img.src = '../../image/dummy/구비서류04.png'
+                }   
+                if(idx == 4){
+                    title.innerHTML = '암 진단금'
+                    img.src = '../../image/dummy/구비서류05.png'
+                }   
+                if(idx == 5){
+                    title.innerHTML = '급성심근경색'
+                    img.src = '../../image/dummy/구비서류06.png'
+                }   
+                if(idx == 6){
+                    title.innerHTML = '실손 의료비'
+                    img.src = '../../image/dummy/구비서류07.png'
+                }   
+
+            })
+        })
+    </script>
+</body>
+</html>

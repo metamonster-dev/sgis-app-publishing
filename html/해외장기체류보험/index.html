@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">해외장기체류보험</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container gray02">
+            <div class="guide pb_32">
+                <div class="mt_30">
+                    <div class="title_wrap type02">
+                        <i class="idcard_icon"></i>
+                        <h2 class="h2 mt_10">
+                            <b>긴 여행도 이젠</b><br/>
+                            마음놓고 떠나세요
+                        </h2>
+                    </div>
+                    <div class="dis_flex justify_center">
+                        <img src="../../image/banner/introduce_banner_01.png" alt="">
+                    </div>
+                </div>
+
+                <div class="introduce_box mt_32">
+                    <div class="item">
+                        <div class="tit">상품안내</div>
+                        <div class="desc">· 해외에서 장기체류하는 동안 발생하는 <span class="col_blue">상해 또는 질병사고를 보상하는 보험</span>이에요</div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">가입목적</div>
+                        <div class="desc">· 어학연수, 유학, 해외출장, 교환교수, 주재원 등 <span class="col_blue">3개월 이상 해외 체류자</span>에 한하여 가입할 수 있어요.</div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">가입기간</div>
+                        <div class="desc">· <span class="col_blue">3개월 이상 / 개월수 가입</span> (1년 이상 해외 체류 시 1년 가입 후 만기전 연장 가입)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide pb_10 bg_white">
+                <div class="dis_flex align_start justify_between pt_26">
+                    <p class="fs_18 fw_600">보장안내</p>
+                    <select class="small" id="tableSelect">
+                        <option value="상해">상해</option>
+                        <option value="질병">질병</option>
+                    </select>
+                </div>
+                <div class="mt_20">
+                    <div class="tab_btns_wrap type02">
+                        <div class="tab_btns" id="tableTabBtns">
+                            <button class="tab_btn active">W1</button>
+                            <button class="tab_btn">W3</button>
+                            <button class="tab_btn">W5</button>
+                            <button class="tab_btn">W7</button>
+                            <button class="tab_btn">W8</button>
+                            <button class="tab_btn">W10</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt_24">
+                    <div data-tabtxt="W1" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>추천국가 : 미국 입학 조건 외</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD $100,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W1" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>추천국가 : 미국 입학 조건 외</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>USD $10,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD $100,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W3" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>추천국가 : 미국 입학 조건 외</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD 50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $20,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W3" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>미국 입학 조건 외</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>USD $10,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $20,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W5" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>USD $50,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD 30,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $20,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W5" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>USD $10,000</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>USD $30,000</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>USD $20,000</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W7" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>5천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W7" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>1천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>5천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W8" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W8" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>유럽지역,미주,캐나다,호주 외 영미권</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>1천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W10" data-seltxt="상해" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>동남아</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>해외사망 &<br/>후유장해</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-tabtxt="W10" data-seltxt="질병" class="tab_content" style="display:none">
+                        <table class="type02">
+                            <thead>
+                                <tr>
+                                    <th>보상내용</th>
+                                    <th>동남아</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>질병사망</th>
+                                    <td>1천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>해외의료실비</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내입원</th>
+                                    <td>3천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내통원</th>
+                                    <td>15만원</td>
+                                </tr>
+                                <tr>
+                                    <th>국내처방</th>
+                                    <td>5만원</td>
+                                </tr>
+                                <tr>
+                                    <th>특별비용</th>
+                                    <td>2천만원</td>
+                                </tr>
+                                <tr>
+                                    <th>배상책임<br/><span class="col_gray">(선택담보)</span></th>
+                                    <td>가입금액 요청<br/>(해외에서 요구 조건)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mt_12">
+                    <p class="col_gray fs_11">&nbsp;· 15세 미만은 사망을 담보하지 않습니다.</p>
+                    <p class="col_gray fs_11 mt_5">&nbsp;· 미국대학 웨이버조건 & 유럽비자조건은 따로 문의 주시기 바랍니다.</p>
+                    <p class="col_red fs_11 mt_5">&nbsp;· 해외 영주권, 시민권 피보험자는 보험가입이 불가합니다.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+         <!-- foot_container -->
+         <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue">신청하기</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+    <script src="../../js/common.js"></script>
+    <script>
+        let tabtxt = 'W1'
+        let seltxt = '상해'
+
+        document.querySelector('#tableSelect').addEventListener('change', (e)=>{
+            seltxt = e.target.value
+            tableChg()
+        })
+
+
+        document.querySelectorAll('#tableTabBtns .tab_btn').forEach((btn)=>{
+            btn.addEventListener('click', (e)=>{
+                tabtxt = e.target.innerText
+                tableChg()
+            })
+        })
+
+        function tableChg(){
+            document.querySelectorAll('.tab_content').forEach((el)=>{
+                el.style.display='none'
+            })
+            document.querySelector(`[data-tabtxt="${tabtxt}"][data-seltxt="${seltxt}"]`).style.display='block'
+        }
+        tableChg()
+        
+    </script>
+</body>
+</html>

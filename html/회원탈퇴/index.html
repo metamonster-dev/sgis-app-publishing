@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">회원탈퇴</div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide">
+                <div class="inner_gray_box square mt_20">
+                    <p class="txt_type01">· 회원탈퇴 시 접수한 보험금 청구내역, 작성한 문의 내역은 모두 소멸됩니다.</p>
+                    <p class="txt_type01">· 회원탈퇴 시 가입정보는 소멸됩니다.</p>
+                    <p class="txt_type01">· 가입정보 복구는 고객센터에 문의해 주세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn red" onclick="popOpen('#confirm01')">탈퇴하기</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+
+    <!-- confirm_pop -->
+    <div class="confirm_pop" id="confirm01">
+        <div class="pop_wrap">
+            <div class="pop_tit pb_34">탈퇴하시겠습니까</div>
+            <div class="pop_btn">
+                <button class="btn gray" onclick="popClose('#confirm01')">취소</button>
+                <button class="btn black" onclick="popClose('#confirm01')">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/common.js"></script>
+</body>
+</html>

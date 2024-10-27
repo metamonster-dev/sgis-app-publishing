@@ -53,6 +53,15 @@ document.querySelectorAll('.inp_wrap .inp').forEach((el)=>{
 })
 
 
+/* tab_btns 이벤트 */
+document.querySelectorAll('.tab_btns .tab_btn').forEach((btn) => {
+    btn.addEventListener('click', (el)=>{
+        let allBtns = el.target.closest('.tab_btns').querySelectorAll('.tab_btn')
+        let _target = el.target.closest('.tab_btn')
+        allBtns.forEach((el)=>{el.classList.remove('active')})
+        _target.classList.add('active')
+    })
+})
 
 /* 팝업 오픈 이벤트 */
 function popOpen(popId){
@@ -79,6 +88,7 @@ function toastOpen(msg){
     }
 }
 
+/* bottom sheet 팝업 오픈 */
 function btmSheetOpen(popId){
     document.querySelector(popId).classList.add('active')
     setTimeout(()=>{
@@ -86,6 +96,7 @@ function btmSheetOpen(popId){
     }, 10)
 }
 
+/* bottom sheet 팝업 클로즈 */
 function btmSheetClose(popId){
     document.querySelector(popId).classList.remove('active_ani')
     setTimeout(()=>{

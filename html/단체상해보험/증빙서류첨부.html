@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">단체상해보험</div>
+                <div>
+                    <button class="q_icon"></button>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="guide">
+                <div class="fs_18 fw_600 mt_14">7. 증빙서류 첨부 </div>
+                <p class="mt_14 fs_14 col_gray">사용하실 증빙 서류 이미지를 추가해 주세요.</p>
+                <div class="mt_16">
+                    <button class="btn blue_border" onclick="btmSheetOpen('#btmSheet01')">추가하기</button>
+                </div>
+
+                <div class="inner_gray_box square mt_18">
+                    <div class="txt_type02">
+                        · 진료비 영수증.jpg
+                        <i class="x_icon_02"></i>
+                    </div>
+                    <div class="txt_type02">
+                        · 진료비 영수증_2.jpg
+                        <i class="x_icon_02"></i>
+                    </div>
+                    <div class="txt_type02">
+                        · 진료비 내역서.jpg
+                        <i class="x_icon_02"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue" onclick="popOpen('#alert01')">증빙서류 첨부</button>
+                <button class="btn blue" onclick="popOpen('#alert02')">증빙서류 첨부 (완료)</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet01">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">증빙서류 첨부</div>
+            <div class="pop_body">
+                <div class="inner_gray_box square">
+                    <div class="fs_13">
+                        · 서류를 접힌 부분 없이 깔끔하게 펴서 촬영해 주세요.<br/>
+                        · 촬영 시 카메라 초점을 흐려지지 않게 맞춰 주세요.<br/>
+                        · 그림자가 지지 않도록 배치하여 촬영해 주세요.
+                    </div>
+                </div>
+                <ul class="bill_file_add_list mt_18">
+                    <li class="item">
+                        <input type="file" id="fileInp01" class="hide">
+                        <label for="fileInp01" class="label">
+                            <i class="camera_icon"></i>
+                            <span class="flex1 fs_16 fw_500">카메라</span>
+                            <i class="r_arrow_icon"></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <input type="file" id="fileInp01" class="hide">
+                        <label for="fileInp01" class="label">
+                            <i class="photo_icon"></i>
+                            <span class="flex1 fs_16 fw_500">앨범</span>
+                            <i class="r_arrow_icon"></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <input type="file" id="fileInp01" class="hide">
+                        <label for="fileInp01" class="label">
+                            <i class="clip_icon"></i>
+                            <span class="flex1 fs_16 fw_500">내 파일</span>
+                            <i class="r_arrow_icon"></i>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- alert_pop -->
+    <div class="confirm_pop" id="alert01">
+        <div class="pop_wrap">
+            <button class="x_icon popClose" onclick="popClose('#alert01')"></button>
+            <div class="pop_tit">증빙서류 첨부</div>
+            <div class="pop_body">
+                <div class="msg">
+                    증빙서류를 첨부해 주세요
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- alert_pop -->
+    <div class="alert_pop" id="alert02">
+        <div class="pop_wrap">
+            <div class="pop_tit">접수 완료</div>
+            <div class="pop_body">
+                <div class="msg">
+                    보험금 청구 접수를 성공적으로<br/>완료하였습니다
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn black" onclick="popClose('#alert02')">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/common.js"></script>
+</body>
+</html>
