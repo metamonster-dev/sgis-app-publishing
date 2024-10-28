@@ -56,10 +56,7 @@
             <div class="guide pb_10 bg_white">
                 <div class="dis_flex align_start justify_between pt_26">
                     <p class="fs_18 fw_600">보장안내</p>
-                    <select class="small" id="tableSelect">
-                        <option value="상해">상해</option>
-                        <option value="질병">질병</option>
-                    </select>
+                    <button class="select_ui_btn small" id="tableSelect" onclick="btmSheetOpen('#btmSheet01')">상해</button>
                 </div>
                 <div class="mt_20">
                     <div class="tab_btns_wrap type02">
@@ -575,14 +572,42 @@
         <!-- // foot_container -->
 
     </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet01">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">유형 선택</div>
+            <div class="pop_body">
+                
+                <div class="checkbox_list02">
+                    <div class="checkbox02">
+                        <input type="radio" name="rad00" id="rad01" value="상해" checked>
+                        <label for="rad01">상해</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad00" value="질병" id="rad02">
+                        <label for="rad02">질병</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <script src="../../js/common.js"></script>
     <script>
         let tabtxt = 'W1'
         let seltxt = '상해'
 
-        document.querySelector('#tableSelect').addEventListener('change', (e)=>{
-            seltxt = e.target.value
-            tableChg()
+        document.querySelectorAll('[name="rad00"]').forEach((rad)=>{
+            rad.addEventListener('change', (e)=>{
+                if(e.target.checked){
+                    seltxt = e.target.value
+                    document.querySelector('#tableSelect').innerHTML = e.target.value
+                    btmSheetClose('#btmSheet01')
+                    tableChg()
+                }
+            })
         })
 
 

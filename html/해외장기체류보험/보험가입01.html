@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">보험가입</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide gray_bortop pb_28">
+                <div class="fs_16 fw_600 mt_28">1. 보험가입자(피보험자)</div>
+                <div class="inp_wrap mt_20">
+                    <label class="label">피보험자 이름 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름을 입력해 주세요" value="홍길동" readonly>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">영문 이름 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름 입력" value="">
+                    </div>
+                    <p class="col_gray3 fs_14">여권상의 영문명과 동일하게 작성해 주세요.</p>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">피보험자 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">현재 거주지 주소 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="text" placeholder="기본주소" value="" readonly>
+                        </div>
+                        <button class="btn white fs_15 fw_400 w_100">주소 검색</button>
+                    </div>
+                    <div class="inp">
+                        <input type="text" placeholder="상세주소 입력" value="">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">직원 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="1111111" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">직원 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="보상안내 받을 분 입력">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">직업 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <button class="select_ui_btn" onclick="btmSheetOpen('#btmSheet01')">대학생 및 대학원생</button>
+                    </div>
+                    <div class="inp">
+                        <input type="text" placeholder="재학중인 학교명을 입력해 주세요">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">휴대폰번호</label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="번호" value="010">
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="number" placeholder="번호" value="">
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="number" placeholder="번호" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">보험 가입 플랜 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <button class="select_ui_btn" onclick="btmSheetOpen('#btmSheet02')">선택</button>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">가입 개월 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="개월수를 입력해 주세요">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">카드 결제정보 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="****-****-****-**** (mm/yy)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide gray_bortop">
+                <div class="fs_16 fw_600 mt_28">2. 계약자 정보</div>
+                <div class="inp_wrap mt_20">
+                    <label class="label">계약자 이름 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름을 입력해 주세요" value="홍길동" readonly>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">영문 이름 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="이름 입력" value="">
+                    </div>
+                    <p class="col_gray3 fs_14">여권상의 영문명과 동일하게 작성해 주세요.</p>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">계약자 주민번호 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap8">
+                        <div class="inp flex1">
+                            <input type="number" placeholder="생년월일 6자리" value="990421" readonly>
+                        </div>
+                        <span>-</span>
+                        <div class="inp flex1">
+                            <input type="password" placeholder="뒷 번호 7자리" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt_24">
+                    <p class="fs_16 fw_600">가입증빙서류 받으실 이메일 주소를 입력해주세요.</p>
+                    <p class="mt_4 fs_14 col_gray3">가입확인서(증명서), 약관 전송 시 사용됩니다.</p>
+                </div>
+
+                <div class="inp_wrap mt_16">
+                    <label class="label">이메일 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="email" placeholder="이메일을 입력해 주세요" value="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue disabled">다음</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet01">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">유형 선택</div>
+            <div class="pop_body">
+                
+                <div class="checkbox_list02">
+                    <div class="checkbox02">
+                        <input type="radio" name="rad0" id="rad0_1" checked>
+                        <label for="rad0_1">대학생 및 대학원생</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad0" id="rad0_2">
+                        <label for="rad0_2">전업주부</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad0" id="rad0_3">
+                        <label for="rad0_3">무직</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad0" id="rad0_4">
+                        <label for="rad0_4">사무직</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad0" id="rad0_5">
+                        <label for="rad0_5">기타</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop active active_ani" id="btmSheet02">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet02')"></button>
+            <div class="pop_tit">플랜 선택</div>
+            <div class="pop_body">
+                
+                <div class="checkbox_list02">
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_1" checked>
+                        <label for="rad1_1">W1</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_2">
+                        <label for="rad1_2">W3</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_3">
+                        <label for="rad1_3">W5</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_4">
+                        <label for="rad1_4">W7</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_5">
+                        <label for="rad1_5">W8</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad1" id="rad1_6">
+                        <label for="rad1_6">W10</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/common.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

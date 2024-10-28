@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">보험료 조회</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container gray02">
+            <div class="guide">
+                <div class="price_check_list mt_20 pb_32">
+                    <div class="item">
+                        <div class="top">
+                            <i class="red_tag_type02">레드</i>
+                            <p class="fs_16">
+                                <b>125,000원</b> 
+                                / N인
+                            </p>
+                        </div>
+                        <ul class="key_val_list gap6">
+                            <li>
+                                <p class="fs_14 col_gray3">상해 사망</p>
+                                <p class="fs_15 fw_600">1억원</p>
+                            </li>
+                            <li>
+                                <p class="fs_14 col_gray3">상해급여의료비</p>
+                                <p class="fs_15 fw_600">3천만원</p>
+                            </li>
+                            <li>
+                                <p class="fs_14 col_gray3">질병급여의료비</p>
+                                <p class="fs_15 fw_600">보장제외</p>
+                            </li>
+                        </ul>
+                        <button class="more_btn">보장 더보기 <i class="r_arrow_blue_icon"></i></button>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="green_tag_type02">그린</i>
+                            <p class="fs_16">
+                                <b>125,000원</b> 
+                                / N인
+                            </p>
+                        </div>
+                        <ul class="key_val_list gap6">
+                            <li>
+                                <p class="fs_14 col_gray3">상해 사망</p>
+                                <p class="fs_15 fw_600">1억원</p>
+                            </li>
+                            <li>
+                                <p class="fs_14 col_gray3">상해급여의료비</p>
+                                <p class="fs_15 fw_600">3천만원</p>
+                            </li>
+                            <li>
+                                <p class="fs_14 col_gray3">질병급여의료비</p>
+                                <p class="fs_15 fw_600">보장제외</p>
+                            </li>
+                        </ul>
+                        <button class="more_btn">보장 더보기 <i class="r_arrow_blue_icon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue disabled">다음</button>
+                <button class="btn blue">다음</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <script src="../../js/common.js"></script>
+    <script>
+        document.querySelectorAll('.price_check_list .item').forEach((item) => {
+            item.addEventListener('click', function(e){
+                document.querySelectorAll('.price_check_list .item').forEach((item) => {
+                    item.classList.remove('active')
+                })
+                let _target = e.target.closest('.item')
+                _target.classList.add('active')
+            })
+        })
+    </script>
+</body>
+</html>

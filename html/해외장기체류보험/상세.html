@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">해외장기체류보험</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide gray_bortop pb_28">
+                <div class="inp_wrap mt_28">
+                    <label class="label">피보험자 생년월일 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <input type="text" placeholder="예시: 980424">
+                    </div>
+                </div>
+                <div class="inp_wrap mt_16">
+                    <label class="label">성별 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap12">
+                        <div class="flex1">
+                            <input type="radio" name="rad00" id="rad01" class="hide" checked>
+                            <label for="rad01" class="btn gray02">남성</label>
+                        </div>
+                        <div class="flex1">
+                            <input type="radio" name="rad00" id="rad02" class="hide">
+                            <label for="rad02" class="btn gray02">여성</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">출발일(집에서 출발 기준) <span class="col_red">*</span></label>
+                    <div class="dis_flex gap12">
+                        <div class="flex1">
+                            <input type="date" name="" id="date" placeholder="년/월/일">
+                        </div>
+                        <div class="flex1">
+                            <select>
+                                <option disabled selected>시/분</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">도착일(집에 도착한 기준) <span class="col_red">*</span></label>
+                    <div class="dis_flex gap12">
+                        <div class="flex1">
+                            <input type="date" name="" id="date" placeholder="년/월/일">
+                        </div>
+                        <div class="flex1">
+                            <select>
+                                <option disabled selected>시/분</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">여행국가 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <select>
+                            <option disabled selected>선택</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="fs_11 col_gray">&nbsp;&nbsp;·&nbsp;&nbsp;여러 국가 여행 시 대표 국가를 선택해 주세요.</div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">현재 체류지 <span class="col_red">*</span></label>
+                    <div class="inp">
+                        <select>
+                            <option disabled selected>선택</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="fs_11 col_gray">&nbsp;&nbsp;·&nbsp;&nbsp;여러 국가 여행 시 대표 국가를 선택해 주세요.</div>
+                </div>
+                <div class="inp_wrap mt_28">
+                    <label class="label">여행 목적 <span class="col_red">*</span></label>
+                    <div class="dis_flex gap20 column mt_8">
+                        <div class="radio w_full">
+                            <input id="rad11" name="rad10" type="radio">
+                            <label for="rad11">유학/어학연수</label>
+                        </div>
+                        <div class="radio w_full">
+                            <input id="rad12" name="rad10" type="radio" checked>
+                            <label for="rad12">출장/주재원/교환교수</label>
+                        </div>
+                        <div class="radio w_full">
+                            <input id="rad13" name="rad10" type="radio" checked>
+                            <label for="rad13">워킹홀리데이</label>
+                        </div>
+                        <div class="radio w_full">
+                            <input id="rad14" name="rad10" type="radio" checked>
+                            <label for="rad14">해외장기체류(일반관광/친지방문)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide gray_bortop">
+                <div class="fs_18 fw_600 mt_28">5. 보험금 청구를 위한 상세 동의서</div>
+                <div class="mt_20 dis_flex justify_between gap8">
+                    <div class="checkbox">
+                        <input id="chkAll" type="checkbox">
+                        <label for="chkAll" class="fs_16 fw_600"></label>
+                    </div>
+                    <a href="" class="dis_flex justify_between flex1 fs_16 fw_600">
+                        전체 약관동의
+                        <i class="r_arrow_g_icon w_16"></i>
+                    </a>
+                </div>
+                <ul class="checkbox_list mt_12">
+                    <li>
+                        <div class="checkbox">
+                            <input id="chk01" type="checkbox">
+                            <label for="chk01"></label>
+                        </div>
+                        <a href="" class="a_link">
+                            개인(신용)정보 수집 · 이용에 관한 동의
+                            <i class="r_arrow_g_icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <input id="chk02" type="checkbox">
+                            <label for="chk02"></label>
+                        </div>
+                        <a href="" class="a_link">
+                            개인(신용)정보 제공에 관한 동의
+                            <i class="r_arrow_g_icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <input id="chk03" type="checkbox">
+                            <label for="chk03"></label>
+                        </div>
+                        <a href="" class="a_link">
+                            개인(신용)정보 조회에 관한 동의
+                            <i class="r_arrow_g_icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue disabled">보험료 계산하기</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <script src="../../js/common.js"></script>
+</body>
+</html>
