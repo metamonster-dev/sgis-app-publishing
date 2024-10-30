@@ -216,9 +216,12 @@ input::-webkit-inner-spin-button {
 .mt_28{margin-top:2.8rem;}
 .mt_30{margin-top:3rem;}
 .mt_32{margin-top:3.2rem;}
+.mt_34{margin-top:3.4rem;}
 .mt_36{margin-top:3.6rem;}
 .mt_40{margin-top:4rem;}
 .mt_44{margin-top:4.4rem;}
+.mt_50{margin-top:5rem;}
+.mt_65{margin-top:6.5rem;}
 
 .ml_4{margin-left:.4rem;}
 
@@ -300,6 +303,7 @@ input::-webkit-inner-spin-button {
 
 .red_tag_type02{display:inline-block; line-height:3.2rem; padding:0 1rem; font-size:1.6rem; font-weight:600; color:#fff; background-color:#FF1E1E; font-style:normal; border-radius:.6rem;}
 .green_tag_type02{display:inline-block; line-height:3.2rem; padding:0 1rem; font-size:1.6rem; font-weight:600; color:#fff; background-color:#69D100; font-style:normal; border-radius:.6rem;}
+.pupple_tag_type02{display:inline-block; line-height:3.2rem; padding:0 1rem; font-size:1.6rem; font-weight:600; color:#fff; background-color:#7557F2; font-style:normal; border-radius:.6rem;}
 
 /* layout */
 .wrap{width:100%; height:100%; display:flex; flex-direction:column; justify-content:space-between;}
@@ -453,6 +457,12 @@ input:checked + .btn.gray02{background-color:#0064FF0D; border-color:#1B5EAD; co
 .tab_btns_wrap.type02 .tab_btns .tab_btn.active{color:#004EA2; font-weight:600;}
 .tab_btns_wrap.type02 .tab_btns .tab_btn.active:after{content:''; display:block; height:.3rem; background-color:#004EA2; position:absolute; left:0; right:0; bottom:0;}
 
+.guide .tab_btns_wrap.type03{margin:0 -1.6rem; border-bottom:1px solid #F1F1F5;}
+.tab_btns_wrap.type03 .tab_btns{display:flex; width:max-content; padding:0 2rem; align-items:center; gap:1.25rem; height:4.9rem; width:100%;}
+.tab_btns_wrap.type03 .tab_btns .tab_btn{white-space:nowrap; height:100%; display:inline-flex; align-items:center; font-size:1.6rem; color:#505050; position:relative; flex:1; justify-content:center;}
+.tab_btns_wrap.type03 .tab_btns .tab_btn.active{color:#004EA2; font-weight:600;}
+.tab_btns_wrap.type03 .tab_btns .tab_btn.active:after{content:''; display:block; height:.3rem; background-color:#004EA2; position:absolute; left:0; right:0; bottom:0;}
+
 
 
 /* table */
@@ -468,6 +478,7 @@ table.type02 thead th{height:4.9rem; font-size:1.3rem; text-align:center; paddin
 table.type02 tbody th,
 table.type02 tbody td{height:4.45rem; font-size:1.3rem; text-align:center; padding:1.3rem 1rem;}
 table.type02 tbody th{font-weight:600;}
+table.type02 tbody td .col_gray{font-size:1.2rem;}
 
 table.type02 th,
 table.type02 td{border-right:1px solid #F1F1F5; border-bottom:1px solid #F1F1F5; vertical-align:middle;}
@@ -560,6 +571,14 @@ table.type02 td{border-right:1px solid #F1F1F5; border-bottom:1px solid #F1F1F5;
 .main_bill_pop .main_bill_list .item{display:flex; justify-content:space-between; align-items:center; font-size:1.6rem; font-weight:600;}
 .main_bill_pop .main_bill_list .item ~ .item{margin-top:1.8rem; padding-top:1.8rem; border-top:1px solid #F1F1F5;}
 .main_bill_pop .main_bill_list .item .btn{width:6.2rem; height:3.2rem; border-radius:.6rem; font-size:1.3rem; font-weight:500;}
+
+/* 스플래쉬 */
+.wrap.splash{background-color:#182D45;}
+.wrap.splash .container{background-color:#182D45; display:flex; align-items:center; justify-content:center; padding-bottom:0;}
+.wrap.splash .foot_container .col_gray{color:#BABABA;}
+.wrap.splash .splash_logo_img{width:17.431rem;}
+.wrap.splash .splash_logo_img img{width:100%;}
+
 
 
 /* 알림 */
@@ -675,5 +694,8 @@ table.type02 td{border-right:1px solid #F1F1F5; border-bottom:1px solid #F1F1F5;
 .price_check_list .item .more_btn{display:flex; align-items:center; justify-content:space-between; width:100%; color:#1B5EAD; font-size:1.4rem; font-weight:600; padding-top:1.4rem; margin-top:1.6rem; border-top:1px solid #f1f1f5;}
 .price_check_list .item .key_val_list{padding-top:1.6rem; margin-top:1.2rem; border-top:1px solid #F1F1F5}
 
-
+.add_companion{background-color:#fff; padding:1.8rem 1.6rem 2rem; border-radius:.6rem;}
+.add_companion .info_txt{display:flex; align-items:center; font-size:1.5rem; color:#505050;}
+.add_companion .info_txt p ~ p{margin-left:1rem; padding-left:1rem; position:relative;}
+.add_companion .info_txt p ~ p:before{content:''; display:block; width:1px; height:1.2rem; background-color:#E5E5EC; position:absolute; left:0; top:50%; margin-top:-.6rem;}
 

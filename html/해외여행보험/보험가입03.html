@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIS</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <div class="header">
+            <div class="guide">
+                <div>
+                    <button class="l_arrow_icon"></button>
+                </div>
+                <div class="tit">보험가입</div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- // header -->
+
+        <!-- container -->
+        <div class="container">
+            <div class="guide">
+                <div class="mt_28">
+                    <div class="fs_18 fw_600">계약 전 알릴 의무사항</div>
+                    <p class="mt_12 col_gray fs_16">아래 항목에 해당하는 피보험자는 보험가입이 불가합니다. 해당 피보험자를 제외하고 가입하시기 바랍니다.</p>
+                </div>
+                <div class="mt_18">
+                    <input type="checkbox" id="checkAll" class="hide">
+                    <label for="checkAll" class="btn gray02">모두 아니오</label>
+                </div>
+
+                <div class="mt_32">
+                    <p class="fs_16 col_gray">1. 최근 5년 이내 10대 질병으로 입원 또는 수술을 받은 사람이 명단에 포함되어 있습니까?</p>
+                    <div class="dis_flex justify_end gap20 mt_12">
+                        <div class="radio">
+                            <input id="rad0_1" name="rad0" type="radio">
+                            <label for="rad0_1">예</label>
+                        </div>
+                        <div class="radio">
+                            <input id="rad0_2" name="rad0" type="radio">
+                            <label for="rad0_2">아니오</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt_32">
+                    <p class="fs_16 col_gray">2. 최근 3개월 이내 질병확정진단 / 질병의심소견 / 치료 / 입원 / 수술 / 투약 받은 사실이 있습니까? * 단순 질환 제외 (예 감기 등)</p>
+                    <div class="dis_flex justify_end gap20 mt_12">
+                        <div class="radio">
+                            <input id="rad1_1" name="rad1" type="radio">
+                            <label for="rad1_1">예</label>
+                        </div>
+                        <div class="radio">
+                            <input id="rad1_2" name="rad1" type="radio">
+                            <label for="rad1_2">아니오</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt_32">
+                    <p class="fs_16 col_gray">3. 위험한 운동이나 전문적인 체육/운동대회 참가를 목적으로 여행하십니까?</p>
+                    <div class="dis_flex justify_end gap20 mt_12">
+                        <div class="radio">
+                            <input id="rad2_1" name="rad2" type="radio">
+                            <label for="rad2_1">예</label>
+                        </div>
+                        <div class="radio">
+                            <input id="rad2_2" name="rad2" type="radio">
+                            <label for="rad2_2">아니오</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt_32">
+                    <p class="fs_16 col_gray">4. 현장 작업이 포함된 업무 출장 및 연수 목적으로 여행하십니까?</p>
+                    <div class="dis_flex justify_end gap20 mt_12">
+                        <div class="radio">
+                            <input id="rad3_1" name="rad3" type="radio">
+                            <label for="rad3_1">예</label>
+                        </div>
+                        <div class="radio">
+                            <input id="rad3_2" name="rad3" type="radio">
+                            <label for="rad3_2">아니오</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_gray_box square mt_36">
+                    <div class="fs_13 col_gray">* 사망담보를 제외한 실손의료비, 여행 중 배상책임, 여행 중 휴대품손해(분실제외), 여행 중 중대사고 구조송환비용은 보험금을 지급할 다수의 보험계약(공제계약 포함)이 체결되어 있는 경우, 약관에 따라 비례하여 보상합니다.</div>
+                    <div class="fs_13 col_gray mt_12">* 출장 중 건설작업 등 현장작업 도중 발생한 사고는 보상되지 않습니다.</div>
+                    <div class="fs_13 col_gray mt_12">* 보험가입 신청자는 피보험자에게 보험약관 및 가입증명서를 전달하여 계약사항을 반드시 확인하도록 합니다.</div>
+                    <div class="fs_13 col_gray mt_12">* 국민건강보험법 또는 의료급여법을 적용받지 못하는 외국인의 경우에는 본인이 실제로 부담한 금액에서 공제금액을 뺀 금액의 40%를 보상한도내에서 보상합니다.</div>
+                </div>
+
+                <div class="col_red fs_13 mt_12">※ 사실과 답변이 다를 경우 계약유지 또는 보험금 지급에 영향을 미칠 수 있습니다.</div>
+            </div>
+        </div>
+        <!-- // container -->
+
+        <!-- foot_container -->
+        <div class="foot_container">
+            <div class="foot_btn">
+                <button class="btn blue disabled">완료</button>
+                <button class="btn blue" onclick="popOpen('#alert01')">완료</button>
+            </div>
+        </div>
+        <!-- // foot_container -->
+
+    </div>
+
+    <div class="alert_pop" id="alert01">
+        <div class="pop_wrap">
+            <div class="pop_tit">신청 완료</div>
+            <div class="pop_body">
+                <div class="msg">
+                    담당자가 확인 후 연락 드리겠습니다
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn black" onclick="popClose('#alert01')">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/common.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
