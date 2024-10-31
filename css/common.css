@@ -202,6 +202,7 @@ input::-webkit-inner-spin-button {
 .underline{text-decoration:underline;}
 
 /* margin */
+.mt_2{margin-top:.2rem;}
 .mt_5{margin-top:.5rem;}
 .mt_6{margin-top:.6rem;}
 .mt_8{margin-top:.8rem;}
@@ -301,6 +302,7 @@ input::-webkit-inner-spin-button {
 .b_arrow_icon{display:inline-block; width:1.6rem; height:1.6rem; background:url('../image/icon/b_arrow.png') no-repeat center/contain; font-size:0;}
 .b_arrow_g_icon{display:inline-block; width:1.4rem; height:1.4rem; background:url('../image/icon/b_arrow_gray_icon.png') no-repeat center/contain; font-size:0;}
 .r_arrow_icon{display:inline-block; width:1.6rem; height:1.6rem; background:url('../image/icon/r_arrow.png') no-repeat center/contain; font-size:0;}
+.r_arrow_w_icon{display:inline-block; width:1.2rem; height:1.2rem; background:url('../image/icon/r_arrow_w_icon.png') no-repeat center/contain; font-size:0;}
 .r_arrow_g_icon{display:inline-block; width:1.4rem; height:1.4rem; background:url('../image/icon/r_arrow_gray.png') no-repeat center/contain; font-size:0;}
 .r_arrow_g_icon02{display:inline-block; width:1.6rem; height:1.6rem; background:url('../image/icon/r_arrow_gray.png') no-repeat center/contain; font-size:0;}
 .r_arrow_blue_icon{display:inline-block; width:1.8rem; height:1.8rem; background:url('../image/icon/r_arrow_blue_icon.png') no-repeat center/contain; font-size:0;}
@@ -382,7 +384,7 @@ pre.inner_gray_box{border-radius:.6rem; border:0; max-height:15.8rem; overflow:a
 .title_wrap .h2 strong{font-weight:700;}
 
 .title_wrap.type02{text-align:center;}
-.title_wrap.type02 .h2{font-size:2.8rem; line-height:3.6rem; font-weight:300;}
+.title_wrap.type02 .h2{font-size:2.8rem; line-height:3.6rem; font-weight:300; letter-spacing:-.025em;}
 .title_wrap.type02 .h2 b{font-weight:600;}
 
 
@@ -592,7 +594,7 @@ table.type03 tbody td{padding:1.1rem;}
 
 .container.main .sect02 .swiper{width:100%; height:100%; position:absolute; left:0; top:0;}
 .container.main .sect02 .swiper-slide img{display:block; width:100%; height:100%; object-fit:cover;}
-.container.main .sect02 .swiper-slide img.dummy_text{position:absolute; left:0; top:0; object-fit:unset; height:100%; width:auto;}
+.container.main .sect02 .swiper-slide .dummy_text{position:absolute; left:0; top:0; object-fit:unset; height:100%; width:100%; padding:1.5rem 1.4rem; color:#fff; background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3955) 42.5%, rgba(0, 0, 0, 0.7) 100%);}
 .container.main .sect02 .swiper-pagination{width:auto; position:absolute; right:1.6rem; bottom:1.4rem; top:unset; left:unset; background-color:#00000099; border-radius:1.6rem; height:1.6rem; color:#fff; font-size:1rem; font-weight:500; padding:0 .8rem; display:flex;}
 
 .container.main .sect03{display:flex; flex-wrap:wrap; align-items:stretch; gap:1.2rem;}
