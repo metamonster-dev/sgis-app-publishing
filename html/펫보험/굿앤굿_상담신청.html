@@ -40,15 +40,13 @@
                     </div>
                 </div>
                 <div class="inp_wrap mt_16">
-                    <label class="label">견종 <span class="col_red">*</span></label>
+                    <label class="label">견종선택 <span class="col_red">*</span></label>
                     <div class="dis_flex gap12">
                         <div class="flex1">
-                            <input type="radio" name="rad00" id="rad01" class="hide" checked>
-                            <label for="rad01" class="btn gray02">남성</label>
+                            <button class="select_ui_btn" onclick="btmSheetOpen('#btmSheet01')">분류</button>
                         </div>
                         <div class="flex1">
-                            <input type="radio" name="rad00" id="rad02" class="hide">
-                            <label for="rad02" class="btn gray02">여성</label>
+                            <button class="select_ui_btn" onclick="btmSheetOpen('#btmSheet02')">품종 선택</button>
                         </div>
                     </div>
                 </div>
@@ -97,6 +95,58 @@
         </div>
         <!-- // foot_container -->
 
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet01">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">분류 선택</div>
+            <div class="pop_body">
+                
+                <div class="checkbox_list02">
+                    <div class="checkbox02">
+                        <input type="radio" name="rad00" id="rad01" checked>
+                        <label for="rad01">소형견</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad00" id="rad02">
+                        <label for="rad02">중형견</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad00" id="rad03">
+                        <label for="rad03">대형견</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet02">
+        <div class="pop_wrap pd_type2">
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet02')"></button>
+            <div class="pop_tit">품종 선택</div>
+            <div class="pop_body">
+                
+                <div class="checkbox_list02">
+                    <div class="checkbox02">
+                        <input type="radio" name="rad10" id="rad11" checked>
+                        <label for="rad11">요크셔테리어</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad10" id="rad12">
+                        <label for="rad12">실키테리어</label>
+                    </div>
+                    <div class="checkbox02">
+                        <input type="radio" name="rad10" id="rad13">
+                        <label for="rad13">포메라니안</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <script src="../../js/common.js"></script>
