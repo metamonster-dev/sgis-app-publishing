@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="mt_12">
-                    <button class="btn blue_border">서명하기</button>
+                    <button class="btn blue_border" onclick="btmSheetOpen('#btmSheet01')">서명하기</button>
                 </div>
 
                 <div class="mt_12">
@@ -97,6 +97,23 @@
         </div>
         <!-- // foot_container -->
 
+    </div>
+
+    <!-- bottom_sheet_pop -->
+    <div class="bottom_sheet_pop" id="btmSheet01">
+        <div class="pop_wrap"> <!-- .pd_type2 -->
+            <button class="x_icon popClose" onclick="btmSheetClose('#btmSheet01')"></button>
+            <div class="pop_tit">전자서명</div>
+            <div class="pop_body">
+                <div class="inner_gray_box square signature">
+                    <canvas style="width:100%; height:100%;"></canvas>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn gray" onclick="btmSheetClose('#btmSheet01')">초기화</button>
+                <button class="btn blue" onclick="btmSheetClose('#btmSheet01')">확인</button>
+            </div>
+        </div>
     </div>
 
     <script src="../../js/common.js"></script>

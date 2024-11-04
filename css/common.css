@@ -341,6 +341,7 @@ input::-webkit-inner-spin-button {
 
 .inner_gray_box{border-radius:.8rem; background-color:#F7F7FB; padding:2rem;}
 .inner_gray_box.square{border-radius:0; padding:1.6rem;}
+.inner_gray_box.square.signature{padding:0; height:12rem;}
 .inner_gray_box .txt_type01{font-size:1.3rem; color:#767676; text-indent:-.6rem; padding-left:.6rem; line-height:1.8rem;}
 .inner_gray_box .txt_type01 ~ .txt_type01{margin-top:.4rem;}
 .inner_gray_box .txt_type02{display:flex; align-items:center; justify-content:space-between; font-size:1.5rem; color:#767676;}
